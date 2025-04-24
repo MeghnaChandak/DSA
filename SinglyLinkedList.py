@@ -349,6 +349,7 @@ class SinglyLinkedList:
 
 #Client Side
 #Create a new object of class SinglyLinkedList for testing purpose
+print("----------START---------")
 print("\n Creating a new SinglyLinkedList object \n")
 L = SinglyLinkedList()
 
@@ -501,3 +502,5 @@ print("Length of list : ",n)
 print("\n Testing isEmpty() on non-empty list")
 b = L.isEmpty()
 print("L is empty : ",b)
+
+print("--------END---------")
