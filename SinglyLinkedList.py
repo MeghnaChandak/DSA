@@ -97,23 +97,23 @@ class SinglyLinkedList:
                 break
             run = run.next
 
-    #     print("----Leaving SinglyLinkedList.insert_after()----")
+        print("----Leaving SinglyLinkedList.insert_after()----")
 
-    # def insert_before(self,prevData,newData: int):
-    #     print("----Entered SinglyLinkedList.insert_before()----")
-    #     if type(newData) != int:
-    #         raise TypeError(f'{newData} is not of type int')
+    def insert_before(self,prevData,newData: int):
+        print("----Entered SinglyLinkedList.insert_before()----")
+        if type(newData) != int:
+            raise TypeError(f'{newData} is not of type int')
 
-    #     newNode = SNode(newData)
-    #     run = self.head_node
-    #     while run is not None:
-    #         if run.next.data == prevData:
-    #             newNode.next = run.next
-    #             run.next = newNode
-    #             break
-    #         run = run.next
+        newNode = SNode(newData)
+        run = self.head_node
+        while run is not None:
+            if run.next.data == prevData:
+                newNode.next = run.next
+                run.next = newNode
+                break
+            run = run.next
 
-    #     print("----Leaving SinglyLinkedList.insert_before()----")
+        print("----Leaving SinglyLinkedList.insert_before()----")
 
     def show(self):
         '''
