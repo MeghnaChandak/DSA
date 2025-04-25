@@ -82,20 +82,20 @@ class SinglyLinkedList:
 
         print("----Leaving SinglyLinkedList.insert_end()----")
 
-    # def insert_after(self,prevData,newData: int):
+    def insert_after(self,prevData,newData: int):
         
-    #     print("----Entered SinglyLinkedList.insert_after()----")
-    #     if type(newData) != int:
-    #         raise TypeError(f'{newData} is not of type int')
+        print("----Entered SinglyLinkedList.insert_after()----")
+        if type(newData) != int:
+            raise TypeError(f'{newData} is not of type int')
 
-    #     newNode = SNode(newData)
-    #     run = self.head_node.next
-    #     while run is not None:
-    #         if run.data == prevData:
-    #             newNode.next = run.next
-    #             run.next = newNode
-    #             break
-    #         run = run.next
+        newNode = SNode(newData)
+        run = self.head_node.next
+        while run is not None:
+            if run.data == prevData:
+                newNode.next = run.next
+                run.next = newNode
+                break
+            run = run.next
 
     #     print("----Leaving SinglyLinkedList.insert_after()----")
 
